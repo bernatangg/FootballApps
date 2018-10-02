@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lineSpacingMultiplier="1.5"/>
+
+    <TextView
+        android:id="@+id/compare_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <TextView
+        android:id="@+id/away_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:lineSpacingMultiplier="1.5"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay"
+            tools:listitem="@layout/item_match" />
+
+        <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+            android:id="@+id/recyclerviewheader_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <Spinner
+                android:id="@+id/spinner_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

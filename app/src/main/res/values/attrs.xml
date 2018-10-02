@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="component_matchdetail_compare_attributes">
+        <attr name="compare_title" format="string" />
+        <attr name="home_text" format="string" />
+        <attr name="away_text" format="string" />
+    </declare-styleable>
+</resources>

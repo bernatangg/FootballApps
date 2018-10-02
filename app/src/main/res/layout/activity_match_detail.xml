@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/matchdetail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/textview_matchdetail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimary"
+            tools:text="Sun, Mar 30 2018" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageview_matchdetail_homebadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_match_holder" />
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_hometeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    tools:text="Manchester United" />
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_homeformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    tools:text="4-2-3-1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_homescore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    tools:text="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/vs"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_awayscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    tools:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageview_matchdetail_awaybadge"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_match_holder" />
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_awayteam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    tools:text="Manchester United" />
+
+                <TextView
+                    android:id="@+id/textview_matchdetail_awayformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    tools:text="4-2-3-1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:compare_title="@string/goals"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_shots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:compare_title="@string/shots"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/lineups"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_goalkeeper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:compare_title="@string/goal_keeper"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_defense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:compare_title="@string/defense"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_middlefield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:compare_title="@string/mid_field"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_forward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:compare_title="@string/forward"/>
+
+        <com.result.isoftscore.helper.MatchDetailComponent
+            android:id="@+id/compare_matchdetail_substitutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:compare_title="@string/substitutes"/>
+
+    </LinearLayout>
+</ScrollView>
