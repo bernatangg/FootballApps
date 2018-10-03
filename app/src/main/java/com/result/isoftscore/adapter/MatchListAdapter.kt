@@ -29,7 +29,7 @@ class MatchListAdapter(private val events: List<Event>,
 
     override fun onBindViewHolder(holder: MatchListViewHolder, position: Int) {
         val event = events[position]
-        holder.bindItem(event, reminderClickListener)
+        holder.bindItem(event, clickListener)
 
         if (enableReminder) {
             holder.bindReminder(event, reminderClickListener)
