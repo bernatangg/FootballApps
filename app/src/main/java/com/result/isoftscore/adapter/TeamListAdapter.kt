@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import com.result.isoftscore.GlideApp
 import com.result.isoftscore.R
 import com.result.isoftscore.model.Team
-import com.result.isoftscore.view.TeamListView
-import kotlinx.android.synthetic.main.item_player_detail.view.*
+import kotlinx.android.synthetic.main.item_team.view.*
 
 class TeamListAdapter(private val teams: List<Team>,
                       private val clickListener: (Team) -> Unit):
